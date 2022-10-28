@@ -2,6 +2,7 @@
   background: url(../img/main-banner2.jpg);
   background-size: 100%;
   background-position-y: rem(-150);
+  background-repeat: no-repeat;
   height: 97vh;
   position: relative;
   color: #fff;
@@ -50,5 +51,13 @@
     &:hover {
       background-color: #790a2b;
     }
+  }
+}
+@include breakpoint("tablet") {
+  #main-banner {
+    background: url(../img/main-banner2.jpg);
+    background-size: cover;
+
+    background-position-x: center;
   }
 }

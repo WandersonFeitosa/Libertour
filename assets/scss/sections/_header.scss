@@ -9,10 +9,10 @@
   }
   .wrapper {
     display: flex;
-    align-items: center; 
-    justify-content: space-between;  
+    align-items: center;
+    justify-content: space-between;
   }
-  .container{
+  .container {
     max-width: rem(1100);
   }
   ul {
@@ -110,5 +110,13 @@
 
   .hidden {
     margin-top: -80px;
+  }
+}
+
+@include breakpoint("tablet") {
+  li {
+    &:last-of-type {
+      margin-right: 10px !important ;
+    }
   }
 }
