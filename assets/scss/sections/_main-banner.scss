@@ -53,11 +53,11 @@
     }
   }
 }
+
 @include breakpoint("tablet") {
   #main-banner {
     background: url(../img/main-banner2.jpg);
     background-size: cover;
-
     background-position-x: center;
   }
 }
