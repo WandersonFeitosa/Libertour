@@ -42,4 +42,18 @@
       font-size: rem(25);
     }
   }
+  &-button {
+    a {
+      width: 100%;
+      text-align: center;
+      background: $red;
+      color: $white;
+      padding: 1rem;
+      border-radius: 10px;
+      transition: 0.3s;
+      &:hover {
+        background: $dark-red;
+      }
+    }
+  }
 }
