@@ -1,0 +1,45 @@
+.package {
+  margin-top: rem(50);
+  margin-bottom: 100px;
+  .container {
+    display: flex;
+    justify-content: space-between;
+  }
+  &-wrapper {
+    max-width: 23%;
+    -webkit-box-shadow: 0px 0px 67px -21px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 67px -21px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 67px -21px rgba(0, 0, 0, 0.75);
+    border-radius: 10px;
+  }
+  &-image {
+    max-width: 100%;
+  }
+  &-info {
+    padding: rem(15);
+    * {
+      margin-bottom: rem(25);
+    }
+  }
+  &-title {
+    font-size: rem(18);
+    line-height: rem(25);
+  }
+  &-duration {
+    font-size: rem(15);
+  }
+  &-advantages {
+    ul {
+      li {
+        margin-bottom: rem(15);
+      }
+    }
+  }
+  &-prices {
+    font-size: rem(15);
+    line-height: rem(25);
+    span {
+      font-size: rem(25);
+    }
+  }
+}
