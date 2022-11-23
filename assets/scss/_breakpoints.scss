@@ -1,0 +1,22 @@
+$breakpoints: (
+    'xl': 1920px,
+    'large': 1440px,
+    'medium': 1366px,
+    'small':  1024px,
+    'tablet': 768px,
+    'mobile': 540px
+) !default;
+
+@mixin breakpoint($max) {
+
+    @if map-has-key($breakpoints, $max) {
+        @media (max-width: map-get($breakpoints, $max)) {
+            @content;
+        }
+    } 
+    
+    @else {
+        @warn "Criar breakpoint em: `#{$max}`. "
+        + "Breakpoints disponíveis são: #{map-keys($max)}.";
+    }
+}

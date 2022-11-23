@@ -1,0 +1,63 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    scroll-behavior: smooth;
+    height: auto;
+}
+
+html{
+    overflow-x: hidden;
+}
+
+div, span, h1, h2, h3, h4, h5, h6, p, a, strong, sub, sup, ol, ul, li, form, label {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    line-height: 1;
+}
+
+* { 
+    box-sizing: border-box;
+}
+
+ol, ul {
+    list-style: none;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    display: block;
+
+    &, &:hover, &:visited {
+        color: inherit;
+        text-decoration: none;
+    }
+}
+
+input, textarea {
+    padding: 0;
+    margin: 0;
+    resize: none;
+
+    &, &:focus {
+        outline: 0;
+        border: 0;
+    }
+}
+
+button {
+    cursor: pointer;
+    background: transparent;
+    color: #000;
+    
+    &, &:hover, &:focus {
+        outline: 0;
+        border: 0;
+    }
+}

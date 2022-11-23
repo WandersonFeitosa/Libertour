@@ -1,0 +1,64 @@
+#main-banner {
+  background: url(../img/main-banner2.jpg);
+  background-size: 100%;
+  background-position-y: rem(-150);
+  background-repeat: no-repeat;
+  height: 97vh;
+  position: relative;
+  color: #fff;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .filter {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 2;
+  }
+  .container {
+    height: unset;
+    position: relative;
+    z-index: 3;
+  }
+  .text-wrapper {
+    text-align: center;
+    max-width: max-content;
+    display: block;
+    margin-top: auto;
+  }
+
+  h1 {
+    font-size: rem(70);
+    margin-bottom: rem(30);
+  }
+  h5 {
+    font-size: rem(18);
+    max-width: rem(700);
+    font-weight: 400;
+    margin-bottom: rem(30);
+    line-height: 35px;
+  }
+  a {
+    background: $red;
+    width: max-content;
+    margin: 0 auto;
+    padding: rem(20) rem(45);
+    font-size: rem(18);
+    border-radius: rem(40);
+    transition: 0.3s;
+
+    &:hover {
+      background-color: $dark_red;
+    }
+  }
+}
+
+@include breakpoint("tablet") {
+  #main-banner {
+    background: url(../img/main-banner2.jpg);
+    background-size: cover;
+    background-position-x: center;
+  }
+}

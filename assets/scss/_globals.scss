@@ -1,0 +1,95 @@
+html {
+  scroll-behavior: smooth !important;
+}
+
+body {
+  scroll-behavior: smooth !important;
+  padding-bottom: rem(100);
+  
+}
+
+#adopt-controller-button {
+  transition: 0.3s;
+
+  @include breakpoint("tablet") {
+    left: unset;
+    right: 20px;
+    bottom: 85px;
+  }
+}
+
+.move-down {
+  @include breakpoint("tablet") {
+    bottom: 5px !important;
+  }
+}
+
+section {
+  position: relative;
+  margin: 0;
+}
+
+.container {
+  max-width: rem(1200);
+  height: 100%;
+  margin-inline: auto;
+}
+
+.section__container {
+  position: absolute;
+  inset: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.hide-tablet {
+  display: block;
+
+  &--flex {
+    display: flex;
+  }
+
+  @include breakpoint("tablet") {
+    display: none !important;
+  }
+}
+
+.hide-desk {
+  display: none !important;
+
+  &--flex {
+    display: none !important;
+  }
+
+  @include breakpoint("tablet") {
+    display: block !important;
+
+    &--flex {
+      display: flex !important;
+    }
+  }
+}
+
+@include breakpoint("xl") {
+  html {
+    font-size: 12.5px;
+  }
+}
+
+@include breakpoint("medium") {
+  html {
+    font-size: 11px;
+  }
+}
+
+@include breakpoint("small") {
+  html {
+    font-size: 7px;
+  }
+}
+
+@include breakpoint("mobile") {
+  html {
+    font-size: 6px;
+  }
+}
