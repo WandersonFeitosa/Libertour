@@ -39,6 +39,9 @@
     font-weight: 400;
     margin-bottom: rem(30);
     line-height: 35px;
+    @media (max-width: 1024px) {
+      line-height: 1.5;
+    }
   }
   a {
     background: $red;
