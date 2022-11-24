@@ -39,6 +39,9 @@
     font-weight: 400;
     margin-bottom: rem(30);
     line-height: 35px;
+    @media (max-width: 1024px) {
+      line-height: 1.5;
+    }
   }
   a {
     background: $red;
@@ -50,7 +53,7 @@
     transition: 0.3s;
 
     &:hover {
-      background-color: #790a2b;
+      background-color: $dark_red;
     }
   }
 }
